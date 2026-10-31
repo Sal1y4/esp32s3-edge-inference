@@ -1,0 +1,9 @@
+menu "Main"
+    config MODEL_FILE_PATH
+        string "Model file path"
+        default "models/esp32_model_quantized.espdl"
+        help
+            By default, Espressif SoCs use TJpg decoder implemented in ROM code.
+            If this feature is disabled, new configuration of TJpg decoder can be used.
+            Refer to REAME.md for more details.
+endmenu
